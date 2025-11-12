@@ -7,7 +7,7 @@ A straightforward automation script used to  post X (Formerly Twitter) updaing t
 ## Needs
 
 - Python 3.8+ 
-- `pip install tweepy python-dotenv`
+- `pip install tweepy`
 
 ---
 
@@ -29,7 +29,7 @@ A straightforward automation script used to  post X (Formerly Twitter) updaing t
 
 ## 🔧 Environment Variables
 
-Create a `.env` file in the project root see `sample.env`
+Open `src/config.py` L16 update your enviromental variable.
 
 ---
 
