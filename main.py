@@ -1,6 +1,7 @@
 import tweepy
 from dotenv import load_dotenv
 from datetime import datetime
+from utils import pick_latest_image
 import os
 
 # Load .env variables!
@@ -52,7 +53,7 @@ auth = tweepy.OAuth1UserHandler(
 api = tweepy.API(auth)
 
 # upload image
-image_path = input("Enter path to image: ").strip()
+image_path = pick_latest_image()
 media = api.media_upload(image_path)
 
 # post with image
