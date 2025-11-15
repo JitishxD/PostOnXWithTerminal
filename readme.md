@@ -1,12 +1,12 @@
 # X Auto Poster on Twitter using terminal
 
-A straightforward automation script used to  post X (Formerly Twitter) updaing the daily progress of your challenge!
+A straightforward automation script used to post X (Formerly Twitter) updaing the daily progress of your challenge!
 
 ---
 
 ## Needs
 
-- Python 3.8+ 
+- Python 3.8+
 - `pip install tweepy`
 
 ---
@@ -33,8 +33,21 @@ Open `src/config.py` L16 update your enviromental variable.
 
 ---
 
+## 🔧 Editing the post content
+
+Open `src/main.py` at L39 you can update the post content.
+
+---
+
 ## 🧪 Run Script
 
 ```sh
 python main.py
+```
+
+## 💻 Convert to .exe file
+
+```sh 
+pip install pyinstaller
+pyinstaller --onefile --icon=icon.ico ./src/main.py 
 ```
